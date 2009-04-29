@@ -1,0 +1,56 @@
+Graphics-Magick-Object
+
+This module hopes to act as an object-oriented wrapper around
+Graphics::Magick, adding a Perlish layer to a very C-based library.
+Specifically, I would like Graphics::Magick to throw exceptions
+when things go wrong, for individual images to be objects which
+can be manipulated, and for the core object to have a list of
+identifiable objects. I'll also fix what I see as flaws with
+G::M, such as returning Magick codes instead of MIME types and
+anything else that pops up. The idea is that I::M can remain as
+a backward compatible straight-to-libmagick layer, while I::M::O
+can be easy to use layer on top of it.
+
+Future goals include transparently wrapping around both
+Graphics::Magick and Graphics::Magick, whichever one happens
+to be installed. 
+
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Build.PL
+	./Build
+	./Build test
+	./Build install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc Graphics::Magick::Object
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Graphics-Magick-Object
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/Graphics-Magick-Object
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/Graphics-Magick-Object
+
+    Search CPAN
+        http://search.cpan.org/dist/Graphics-Magick-Object
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2009 Gaurav Vaidya
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+

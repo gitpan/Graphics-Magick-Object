@@ -1,0 +1,16 @@
+Build.PL
+Changes
+lib/Graphics/Magick/Object.pm
+lib/Graphics/Magick/Object/Image.pm
+MANIFEST
+README
+t/00-load.t
+t/boilerplate.t
+t/files/graphics-magick-object.jpg
+t/files/graphics-magick-object.png
+t/magick.t
+t/png.t
+t/pod-coverage.t
+t/pod.t
+Makefile.PL
+META.yml

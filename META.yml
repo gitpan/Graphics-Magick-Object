@@ -1,0 +1,25 @@
+---
+name: Graphics-Magick-Object
+version: 0.01_01
+author:
+  - 'Gaurav Vaidya <gaurav@cpan.org>'
+abstract: An object representing the Graphics::Magick engine.
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+build_requires:
+  Graphics::Magick: 0
+  Method::Signatures: 0
+  Moose: 0
+  Test::More: 0
+provides:
+  Graphics::Magick::Object:
+    file: lib/Graphics/Magick/Object.pm
+    version: 0.01_01
+  Graphics::Magick::Object::Image:
+    file: lib/Graphics/Magick/Object/Image.pm
+    version: 0.01_01
+generated_by: Module::Build version 0.280801
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
